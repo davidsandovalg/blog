@@ -149,6 +149,13 @@ body {
   margin-top: 0.5rem;
 }
 
+/* ====== TEXT ====== */
+.stylized-paragraph {
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+
+
 /* ====== TABLA ====== */
 
 .table-wrapper {
