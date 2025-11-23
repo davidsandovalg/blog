@@ -181,6 +181,13 @@ tbody tr:nth-child(even) {
   background: #f3f4f6;
 }
 
+.tabla-img {
+  max-width: 220px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 8px;
+}
+
 /* ====== REFERENCIAS ====== */
 
 .refs li {
