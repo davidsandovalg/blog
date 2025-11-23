@@ -1,0 +1,231 @@
+/* Tipografía y estilos básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+/* ====== HEADER Y MENÚ ====== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: rgba(15, 23, 42, 0.95);
+  color: #f9fafb;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.main-nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.main-nav a:hover {
+  color: #38bdf8;
+}
+
+/* ====== SECCIONES ====== */
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section-alt {
+  background: #e5f4ff;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.section p {
+  margin-bottom: 0.75rem;
+}
+
+.section ul,
+.section ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ====== HERO ====== */
+
+.hero {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #f9fafb;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+}
+
+/* ====== GRID LAYOUTS ====== */
+
+.grid-3 {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.causes-effects ul {
+  margin-top: 0.5rem;
+}
+
+/* ====== TABLA ====== */
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+thead {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+th,
+td {
+  padding: 0.9rem 0.9rem;
+  font-size: 0.92rem;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+/* ====== REFERENCIAS ====== */
+
+.refs li {
+  margin-bottom: 0.5rem;
+}
+
+/* ====== FOOTER ====== */
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    margin: 0.25rem 0.75rem 0 0;
+  }
+}
